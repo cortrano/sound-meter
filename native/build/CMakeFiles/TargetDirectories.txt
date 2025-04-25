@@ -1,0 +1,3 @@
+C:/Users/glago/Development/flutter_projects/cortrano/sound_meter/native/build/CMakeFiles/audio_processor.dir
+C:/Users/glago/Development/flutter_projects/cortrano/sound_meter/native/build/CMakeFiles/edit_cache.dir
+C:/Users/glago/Development/flutter_projects/cortrano/sound_meter/native/build/CMakeFiles/rebuild_cache.dir

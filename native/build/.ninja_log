@@ -1,0 +1,3 @@
+# ninja log v5
+1	45	7672691352773452	CMakeFiles/audio_processor.dir/audio_processor.c.o	359cf3bf87619483
+46	111	7672691353473771	libaudio_processor.so	d288f3ff0a3f2637
