@@ -1,16 +1,24 @@
-# sound_meter
+# Sound Meter
 
-A new Flutter project.
+Простое Flutter-приложение для измерения громкости звука в децибелах с помощью микрофона устройства. Работает на Android и iOS.
+Использует платформенные каналы для обращения к микрофону, C-код для расчёта громкости.
 
-## Getting Started
+## Структура проекта
 
-This project is a starting point for a Flutter application.
+`lib/` — Dart-код приложения:
 
-A few resources to get you started if this is your first Flutter project:
+`main.dart` — основной UI и логика.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- `audio_processor_ffi.dart` — FFI для нативной библиотеки.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+`android/` — нативный код для Android:
+
+`app/src/main/kotlin/.../MainActivity.kt` — работа с `AudioRecord`.
+
+- `app/src/main/jniLibs/` — `libaudio_processor.so`.
+
+`ios/` — нативный код для iOS:
+
+`Runner/` — работа с аудиозаписью.
+
+`native/` — исходники C-библиотеки для обработки аудио.
